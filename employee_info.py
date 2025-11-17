@@ -36,6 +36,11 @@ def get_employees_by_dept(department):
     result = []
 
     # Add your implementation from here
+    for eachDICT in employee_data:
+        if eachDICT['department'] == department:
+            result.append(eachDICT)
+
+    return result        
 
 
     return result
